@@ -7,6 +7,7 @@ body {
 /* INIZIO ALTEZZE */
 .height {
     height: 100vh;
+    overflow: hidden;
 }
 
 #header {
@@ -92,6 +93,56 @@ body {
     background-color: var(--my-gray);
 }
 
+.my-bg-lightgray {
+    background-color: var(--my-gray);
+}
+
+.my-border-gray {
+    border-color: var(--my-dark-gray);
+}
+
+.my-color-gray {
+    color: var(--my-dark-gray);
+}
+
+/* LABEL */
+.my-label-green {
+    display: inline-block;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    border-radius: 0.5rem;
+    color: var(--my-light-color);
+    text-align: center;
+    background-color: var(--my-green);
+}
+
+.my-label-red {
+    display: inline-block;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    border-radius: 0.5rem;
+    color: var(--my-light-color);
+    text-align: center;
+    background-color: var(--my-red);
+}
+
+.my-label-yellow {
+    display: inline-block;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    border-radius: 0.5rem;
+    color: var(--my-light-color);
+    text-align: center;
+    background-color: var(--my-yellow);
+}
+
+/* FINE LABEL */
+
+
+
 
 /* REGOLE HEADER */
 #header .nav-item:nth-child(4) > a::after {
@@ -110,8 +161,19 @@ body {
 
 
 /* REGOLE MAIN - SECTION */
+#section {
+    height: 100%;
+    overflow-y: scroll;
 
+}
 
+#section .img-avatar {
+    width: 32px;
+}
+
+#section .my-to-do {
+    border: 1px solid var(--my-dark-gray);
+}
 
 
 
