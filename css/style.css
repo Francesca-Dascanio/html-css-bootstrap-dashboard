@@ -175,6 +175,14 @@ body {
     border: 1px solid var(--my-dark-gray);
 }
 
+#section .my-stats {
+    border: 1px solid var(--my-dark-gray);
+}
+
+#section .img-stats {
+    width: 100%;
+}
+
 
 
 /* REGOLE MEDIA QUERY */
