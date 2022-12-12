@@ -52,42 +52,17 @@ body {
 
 
 /* REGOLE HEADER */
-/* #header {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#main {
-    margin-top: 50px;
-} */
-
 #header .nav-item:nth-child(4) > a::after {
     display: none;
 }
 
 
 /* REGOLE MAIN - ASIDE */
-#aside {
-    max-width: 150px;
-    min-height: 100vh;
-}
-
-#aside .my-aside-container {
-    max-width: 150px;
-    min-height: 100vh;
-}
-
-
 
 
 /* REGOLE MEDIA QUERY */
 /* ASIDE */
 @media screen and (max-width: 992px) {
-    #aside .my-aside-container {
-        max-width: 50px;
-    }
-
     #aside .my-a {
         display: none;
     }
@@ -117,7 +92,29 @@ body {
     border: 1 px dashed black;
 }
 
-.debug section {
-    background-color: lightgreen;
+.debug #section {
+    background-color: lightgrey;
+}
+
+.debug #section-header {
+    background-color: lightseagreen;
+    border: 1 px dashed black;
+    width: 100%;
+    height: 100px;
+}
+
+.debug #section .my-col-left {
+    background-color: rgb(203, 203, 44);
     border: 1 px dashed black;
 }
+
+.debug #section .my-sub-col {
+    background-color: orangered;
+    border: 1 px dashed black;
+}
+
+.debug #section .my-col-right {
+    background-color: lightskyblue;
+    border: 1 px dashed black;
+}
+
