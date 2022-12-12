@@ -15,6 +15,22 @@ body {
     --my-dark-gray: #6c757d;
 }
 
+.my-padding-left {
+    padding-left: calc(1.5rem * .5);
+}
+
+.my-padding-right {
+    padding-right: calc(1.5rem * .5);
+}
+
+.my-padding-top {
+    padding-top: calc(1.5rem * .5);
+}
+
+.my-padding-bottom {
+    padding-bottom: calc(1.5rem * .5);
+}
+
 .my-text-dark-gray {
     color: var(--my-dark-gray);
 }
@@ -23,7 +39,11 @@ body {
     color: var(--my-yellow);
 }
 
-#header .nav-item:nth-child(4) > a::after {
+.my-a {
+    display: inline-block;
+}
+
+.my-i {
     display: none;
 }
 
@@ -31,17 +51,69 @@ body {
 
 
 
+/* REGOLE HEADER */
+/* #header {
+    position: relative;
+    top: 0;
+    left: 0;
+}
 
+#main {
+    margin-top: 50px;
+} */
+
+#header .nav-item:nth-child(4) > a::after {
+    display: none;
+}
+
+
+/* REGOLE MAIN - ASIDE */
+#aside {
+    max-width: 150px;
+    min-height: 100vh;
+}
+
+#aside .my-aside-container {
+    max-width: 150px;
+    min-height: 100vh;
+}
+
+
+
+
+/* REGOLE MEDIA QUERY */
+/* ASIDE */
+@media screen and (max-width: 992px) {
+    #aside .my-aside-container {
+        max-width: 50px;
+    }
+
+    #aside .my-a {
+        display: none;
+    }
+    
+    #aside .my-i {
+        display: block;
+        text-align: center;
+    }
+
+}
 
 
 /* REGOLE DEBUG */
 .debug header {
-    background-color: lightblue;
+    background-color: lightcoral;
     border: 1 px dashed black;
 }
 
-.debug aside {
-    background-color: lightcoral;
+
+.debug #aside .my-aside-container {
+    background-color: lightblue;
+}
+
+
+.debug #aside .my-aside-container > * {
+    background-color: plum;
     border: 1 px dashed black;
 }
 
