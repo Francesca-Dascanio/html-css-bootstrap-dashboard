@@ -13,3 +13,24 @@ body {
     --my-yellow: #ffc107;
     --my-red: #dc3545;
 }
+
+
+
+
+
+/* REGOLE DEBUG */
+.debug header {
+    background-color: lightblue;
+    border: 1 px dashed black;
+    min-height: 200px;
+}
+
+.debug aside {
+    background-color: lightcoral;
+    border: 1 px dashed black;
+}
+
+.debug section {
+    background-color: lightgreen;
+    border: 1 px dashed black;
+}
