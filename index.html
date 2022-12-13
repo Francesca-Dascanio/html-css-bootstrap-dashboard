@@ -189,9 +189,106 @@
                                         <span class="my-text-light pe-1 align-top">
                                             Studenti
                                         </span>
-                                        <button type="button" class="btn my-border-light my-text-light align-top">
+                                        <button type="button" class="my-btn-modal btn align-top rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                             +
                                         </button>
+                                        <!-- Prova modale -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                            Inserisci un nuovo studente
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="" method="GET">
+                                                            <div class="my-modal-info">
+                                                                <span>
+                                                                    <label for="nome" class="my-modal-label">
+                                                                        Nome
+                                                                    </label>
+                                                                    <input type="text" id="nome">
+                                                                </span>
+                                                                <span>
+                                                                    <label for="cognome" class="my-modal-label">
+                                                                        Cognome
+                                                                    </label>
+                                                                    <input type="text" id="cognome">
+                                                                </span>
+                                                            </div>
+                                                            <div class="my-modal-info">
+                                                                <span>
+                                                                    <label for="email" class="my-modal-label">
+                                                                        Email
+                                                                    </label>
+                                                                    <input type="email" id="email">
+                                                                </span>
+                                                                <span>
+                                                                    <label for="psw" class="my-modal-label">
+                                                                        Password
+                                                                    </label>
+                                                                    <input type="password" id="psw">
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="my-modal-info">
+                                                                    <label for="address" class="my-modal-label">
+                                                                        Indirizzo
+                                                                    </label>
+                                                                    <input type="text" id="address">
+                                                            </div>
+
+                                                            <div class="my-modal-info">
+                                                                <span class="my-span">
+                                                                    <label for="città" class="my-modal-label">
+                                                                        Città
+                                                                    </label>
+                                                                    <input type="text" id="città">
+                                                                </span>
+                                                                <span class="my-span">
+                                                                    <label for="città" class="my-modal-label">
+                                                                        Stato
+                                                                    </label>
+                                                                    <input type="text" id="città">
+                                                                </span>
+                                                                <span class="my-span">
+                                                                    <label for="città" class="my-modal-label">
+                                                                        CAP
+                                                                    </label>
+                                                                    <input type="text" id="città">
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="my-modal-info">
+                                                                <label for="foto" class="my-modal-label">
+                                                                    Foto
+                                                                </label>
+                                                                <input type="file" id="foto">
+                                                        </div>
+                                                            
+                                                            <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                <label class="form-check-label" for="exampleCheck1">
+                                                                    Check me out
+                                                                </label>
+                                                            </div>
+                                                            <div class="my-form-submit">
+                                                                <button type="submit" class="btn my-bg-blue my-text-light">
+                                                                    Salva
+                                                                </button>
+                                                                <button type="submit" class="btn my-bg-yellow">
+                                                                    Svuota
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                               <!-- Fine modale -->
                                     </div>
                                 </div>
                             </div>
