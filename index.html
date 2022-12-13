@@ -142,13 +142,13 @@
                         <div class="my-section-container d-flex flex-row flex-wrap">
                             <div id="section-header" class="col-12">
                                 <div class="d-flex flex-row flex-wrap">
-                                    <div class="col-md-6 col-12">
+                                    <div class="col-lg-6 col-md-4 col-12">
                                         1
                                     </div>
-                                    <div class="col-md-4 col-12">
+                                    <div class="col-lg-4 col-md-4 col-12">
                                         2
                                     </div>
-                                    <div class="col-md-2 order-md-0 col-12 order-first">
+                                    <div class="col-lg-2 col-md-4 col-12 order-md-0 order-first">
                                         3
                                     </div>
                                 </div>
@@ -157,10 +157,11 @@
                             <div id="section-main" class="col-12">
                                 <div class="d-flex flex-row flex-wrap">
                                     <div class="my-col-left col-lg-8 col-12">
-                                        <div class="my-sub-col m-2 rounded my-border-gray">
-                                            <div class="">
-                                                <div class="my-title fs-3 py-1 px-3 rounded my-bg-lightgray">
-                                                    Titolo
+                                        <!-- Prossime classi -->
+                                        <div class="my-sub-col m-2">
+                                            <div class="card">
+                                                <div class="card-title h3 my-bg-lightgray rounded-top p-2 my-0">
+                                                    Prossime classi
                                                 </div>
                                                 <hr class="m-0">
                                                 <!-- Inizio tabella -->
@@ -430,79 +431,119 @@
                                                 <!-- Fine tabella -->
                                             </div>
                                         </div>
-                                        <div class="my-sub-col m-2 rounded">
-                                            <div class="my-bg-lightgray rounded">
-                                                <div class="my-title fs-3 py-1 px-3">
+                                        <!-- FAQ -->
+                                        <div class="my-sub-col m-2">
+                                            <div class="card">
+                                                <div class="card-title h3 my-bg-lightgray rounded-top p-2 my-0">
                                                     F.A.Q.
                                                 </div>
                                                 <hr class="m-0">
+                                                <div class="card-text">
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                                Come aggiungere un nuovo studente?
+                                                            </button>
+                                                            </h2>
+                                                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                                <div class="accordion-body">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rerum porro ducimus quod repellendus incidunt.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                                Come posso accedere alle informazioni del mio account?
+                                                            </button>
+                                                            </h2>
+                                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                                <div class="accordion-body">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci unde tempora minus dolorum error. Nisi odio inventore exercitationem dignissimos quod.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                                Posso usare questa dashboard da mobile?
+                                                            </button>
+                                                            </h2>
+                                                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                                <div class="accordion-body">
+                                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quae consequatur itaque nulla ut, debitis earum at officia quibusdam distinctio consequuntur saepe cumque quod dolorem ipsum ex. Dolore, magnam nostrum?
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="my-col-right col-lg-4 col-12">
-                                        <div class="my-sub-col m-2 my-border-gray rounded">
-                                            <div class="my-bg-lightgray rounded">
-                                                <div class="my-title fs-3 py-1 px-3">
+                                        <!-- Todo -->
+                                        <div class="my-sub-col m-2">
+                                            <div class="card">
+                                                <div class="card-title h3 my-bg-lightgray rounded-top p-2 my-0">
                                                     Todo
                                                 </div>
                                                 <hr class="m-0">
-                                                <div class="d-flex flex-row">
-                                                    <div class="my-to-do rounded my-border-gray my-4 col-10 offset-1">
-                                                        <ul class="list-unstyled">
-                                                            <li class="p-1">
-                                                                <input type="checkbox" id="item1" name="item1" value="item">
-                                                                <label for="item1">
-                                                                    Kickoff nuove classi
-                                                                </label>
-                                                            </li>
-                                                            <hr class="m-0">
-                                                            <li class="p-1">
-                                                                <input type="checkbox" id="item1" name="item1" value="item">
-                                                                <label for="item1">
-                                                                    Lezione su Bootstrap 5 in classe #75
-                                                                </label>
-                                                            </li>
-                                                            <hr class="m-0">
-                                                            <li class="p-1">
-                                                                <input type="checkbox" id="item1" name="item1" value="item">
-                                                                <label for="item1">
-                                                                    Controllare su username github studenti
-                                                                </label>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+    
+                                                <div class="card m-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="p-1">
+                                                            <input type="checkbox" id="item1" name="item1" value="item">
+                                                            <label for="item1">
+                                                                Kickoff nuove classi
+                                                            </label>
+                                                        </li>
+                                                        <hr class="m-0">
+                                                        <li class="p-1">
+                                                            <input type="checkbox" id="item1" name="item1" value="item">
+                                                            <label for="item1">
+                                                                Lezione su Bootstrap 5 in classe #75
+                                                            </label>
+                                                        </li>
+                                                        <hr class="m-0">
+                                                        <li class="p-1">
+                                                            <input type="checkbox" id="item1" name="item1" value="item">
+                                                            <label for="item1">
+                                                                Controllare su username github studenti
+                                                            </label>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="my-sub-col m-2 rounded">
-                                            <div class="d-flex flex-row">
-                                                <div class="my-stats rounded my-border-gray my-4 col-10 offset-1">
-                                                    <img class="img-stats rounded" src="img/stats.jpeg" alt="stats">
-                                                    <div class="my-data py-1 px-3">
-                                                        <div>
-                                                            Utenti attivi
-                                                        </div>
-                                                        <p>
-                                                            Lista degli utenti attivi in piattaforma nell'ultimo mese
-                                                        </p>
-                                                        <div>
-                                                            <hr class="m-0">
-                                                            Gennaio: 1200
-                                                            <hr class="m-0">
-                                                        </div>
-                                                        <div>
-                                                            Febbraio: 800
-                                                            <hr class="m-0">
-                                                        </div>
-                                                        <div>
-                                                            Marzo: 1200
-                                                            <hr class="m-0">
-                                                        </div>
-                                                        <a href="#">
-                                                            Visualizza report approfondito
-                                                        </a>
+                                        <!-- Stats -->
+                                        <div class="my-sub-col m-2">
+                                            <div class="card">
+                                                <img class="img-stats rounded" src="img/stats.jpeg" alt="stats">
+                                                <div class="card-title h5 p-2 my-0">
+                                                    Utenti attivi
+                                                </div>
+                                                <div class="card-text">
+                                                    <p class="p-2">
+                                                        Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                                    </p>
+                                                    <div class="p-2">
+                                                        <hr class="my-2">
+                                                        Gennaio: 1200
+                                                        <hr class="m-0">
                                                     </div>
+                                                    <div class="p-2">
+                                                        Febbraio: 800
+                                                        <hr class="m-0">
+                                                    </div>
+                                                    <div class="p-2">
+                                                        Marzo: 1200
+                                                        <hr class="m-0">
+                                                    </div>
+                                                    <a class="d-inline-block px-2 my-3" href="#">
+                                                        Visualizza report approfondito
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
