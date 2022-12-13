@@ -40,12 +40,12 @@ body {
 }
 
 /* #section-header {
-    height: 100px;
-} */
+    min-height: 100px;
+}
 
 #section-main {
     height: calc(100% - 100px);
-}
+} */
 /* FINE ALTEZZE */
 
 
@@ -75,6 +75,7 @@ body {
     --my-blue: #1b72e8;
     --my-dark: #051e34;
     --my-light-color: #f7f7f7;
+    --my-white: #ffffff;
     --my-gray: #e5e5e5;
     --my-green: #198754;
     --my-yellow: #ffc107;
@@ -99,6 +100,19 @@ body {
 .my-bg-lightgray {
     background-color: var(--my-gray);
 }
+
+.my-bg-light {
+    background-color: var(--my-light-color);
+}
+
+.my-bg-white {
+    background-color: var(--my-white);
+}
+
+.my-bg-dark {
+    background-color: var(--my-dark);
+}
+
 
 .my-bg-blue {
     background-color: var(--my-blue);
@@ -163,18 +177,39 @@ body {
 
 
 /* REGOLE HEADER */
+#header .my-logo {
+    width: 100%;
+}
+
+#header .my-logo-small {
+    height: 40px;
+}
+
+#header .my-logo {
+    display: inline-block;
+}
+
+#header .my-logo-small {
+    display: none;
+}
+
 #header .nav-item:nth-child(4) > a::after {
     display: none;
 }
 
 
 /* REGOLE MAIN - ASIDE */
+
+
 .my-a {
     display: inline-block;
+    color: var(--my-light-color);
+    text-decoration: none;
 }
 
 .my-i {
     display: none;
+    color: var(--my-light-color);
 }
 
 
@@ -220,6 +255,14 @@ body {
 /* REGOLE MEDIA QUERY */
 /* ASIDE */
 @media screen and (max-width: 992px) {
+    #header .my-logo {
+        display: none;
+    }
+
+    #header .my-logo-small {
+        display: inline-block;
+    }
+
     #aside .my-a {
         display: none;
     }
@@ -246,25 +289,25 @@ body {
 
 
 /* REGOLE DEBUG */
-.debug #header {
+/* .debug #header {
     background-color: lightcoral;
     border: 1 px dashed black;
-}
+} */
 
 
-.debug #aside {
+/* .debug #aside {
     background-color: lightblue;
-}
+} */
 
 
-.debug #aside .my-aside-container > * {
+/* .debug #aside .my-aside-container > * {
     background-color: plum;
     border: 1 px dashed black;
-}
-
+} */
+/* 
 .debug #section {
     background-color: lightgrey;
-}
+} */
 
 /* .debug #section-header {
     background-color: lightseagreen;
