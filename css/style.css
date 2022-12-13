@@ -132,6 +132,10 @@ body {
     border: 1px solid var(--my-light-color);
 }
 
+.my-border-gray {
+    border: 1px solid var(--my-dark-gray);
+}
+
 /* FONT SIZE */
 .my-fs-small {
     font-size: 0.8rem;
@@ -197,9 +201,28 @@ body {
     display: none;
 }
 
+#header li:nth-child(4) i:hover {
+    color: var(--my-yellow);
+}
+
+#header .my-position {
+    left: auto;
+    right: 0;
+}
+
 
 /* REGOLE MAIN - ASIDE */
+#aside li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 
+#aside a:hover {
+    color: var(--my-light-color);
+}
+
+#aside i:hover {
+    color: var(--my-light-color);
+}
 
 .my-a {
     display: inline-block;
@@ -280,6 +303,24 @@ body {
         display: none;
     }
 
+    #section-main table .my-th {
+        display: none;
+    }
+
+    #section-main table .my-td {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #section-main table .my-th-small {
+        display: none;
+    }
+
+    #section-main table .my-td-small {
+        display: none;
+    }
 }
 
 
